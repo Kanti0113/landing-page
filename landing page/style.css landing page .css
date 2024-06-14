@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  width: 100%;
+  max-width: 1200px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cta {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.hero {
+  background-image: url("b3.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us img,
+.featured-birds .bird img,
+.accessories .accessory img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bird-gallery,
+.accessory-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.review {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact form {
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+footer .quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+footer .quick-links a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer .newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-toggle {
+  display: none;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul.show-nav {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.show-nav {
+    display: flex;
+  }
+}
